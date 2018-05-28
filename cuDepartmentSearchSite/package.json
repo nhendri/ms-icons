@@ -1,0 +1,33 @@
+{
+  "name": "cu-department-search-site",
+  "version": "1.0.0",
+  "description": "A branding and layout template project for SP Server 2016 publishing sites",
+  "main": "index.js",
+  "scripts": {
+    "clean": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command rm -recurse -force dist/*",
+    "sass": "node-sass src -o dist --output-style compressed",
+    "babel": "npx babel src --out-dir dist --presets=env --minified --no-comments",
+    "backEnd": "npx json-server --watch jsonData/devData.json --port 15120",
+    "serve": "concurrently --kill-others \"node-sass src -o dist --output-style compressed -w\" \"npx babel src --out-dir dist --presets=env --minified --no-comments --watch\" \"npm run backEnd\"",
+    "prebuild": "",
+    "build": "",
+    "predeploy": "",
+    "deploy": ""
+  },
+  "keywords": [
+    "sharepoint",
+    "intranet",
+    "ecm",
+    "cms",
+    "publishing"
+  ],
+  "author": "Nick H",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^3.5.1",
+    "json-server": "^0.12.2",
+    "node-sass": "^4.9.0"
+  }
+}
