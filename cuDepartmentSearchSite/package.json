@@ -29,5 +29,8 @@
     "concurrently": "^3.5.1",
     "json-server": "^0.12.2",
     "node-sass": "^4.9.0"
+  },
+  "dependencies": {
+    "hoek": "^5.0.3"
   }
 }
