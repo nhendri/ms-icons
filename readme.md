@@ -15,10 +15,10 @@
 | List With Link  | Use a list with the links and possibly supporting graphics; place on page with JS Injection      | Put management of this content into relatively easily managed list; lot more freedom to style | Requires more JS on page         |
 
 #### A few thoughts on deployment
-1 - add scss partial to page scss
-2 - update page layout template with target
-3 - add list
-4 - re-work REST for live environment
-5 - stage resources
-6 - update js custom action
-7 - see the magic happen?
+1. add scss partial to page scss
+2. update page layout template with target
+3. add list
+4. re-work REST for live environment
+5. stage resources
+6. update js custom action
+7. see the magic happen?
